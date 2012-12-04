@@ -1,0 +1,37 @@
+Address:
+    type: entity
+    table: Address
+    fields:
+        adrId:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            column: adr_id
+            generator:
+                strategy: IDENTITY
+        adrStreet:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: adr_street
+    manyToMany:
+        usr:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: adr
+            inversedBy: null
+            joinTable: null
+            orderBy: null
+    manyToOne:
+        cty:
+            targetEntity: City
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                cty_id:
+                    referencedColumnName: cty_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

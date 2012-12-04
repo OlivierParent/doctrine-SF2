@@ -1,0 +1,25 @@
+City:
+    type: entity
+    table: City
+    fields:
+        ctyId:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            column: cty_id
+            generator:
+                strategy: IDENTITY
+        ctyPostcode:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+            column: cty_postcode
+        ctyName:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: cty_name
+    lifecycleCallbacks: {  }

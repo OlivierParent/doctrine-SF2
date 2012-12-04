@@ -1,0 +1,27 @@
+Ahs\DemoBundle\Entity\Address:
+  properties:
+    adrStreet:
+      - NotBlank: ~
+    cty:
+      - Valid: ~
+Ahs\DemoBundle\Entity\City:
+  properties:
+    ctyName:
+      - NotBlank: ~
+    ctyPostcode:
+      - NotBlank: ~
+Ahs\DemoBundle\Entity\Email:
+  properties:
+    emlAddress:
+      - NotBlank: ~
+      - Email: ~
+Ahs\DemoBundle\Entity\User:
+  properties:
+    usrGivenname:
+      - NotBlank: ~
+    usrFamilyname:
+      - NotBlank: ~
+    emails:
+      - Valid: ~
+    adr:
+      - Valid: ~

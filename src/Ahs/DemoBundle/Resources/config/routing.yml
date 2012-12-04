@@ -1,0 +1,3 @@
+ahs_demo_homepage:
+    pattern:  /
+    defaults: { _controller: AhsDemoBundle:Default:index }

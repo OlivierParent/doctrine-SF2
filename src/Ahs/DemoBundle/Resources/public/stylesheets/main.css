@@ -1,0 +1,17 @@
+fieldset {
+    border: 1px solid lightgray;
+    border-radius: .5em;
+    padding: .5em 1em 0;
+    position: relative;
+}
+fieldset input[type="submit"] {
+    bottom: 0;
+    position: absolute;
+    margin: .25em;
+    right: 0;
+}
+legend {
+    color: green;
+    font-size: 1.25em;
+    padding: 0 .25em;
+}

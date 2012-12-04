@@ -1,0 +1,7 @@
+parameters:
+#    ahs_demo.example.class: Ahs\DemoBundle\Example
+
+services:
+#    ahs_demo.example:
+#        class: %ahs_demo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

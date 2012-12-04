@@ -1,0 +1,42 @@
+User:
+    type: entity
+    table: User
+    fields:
+        usrId:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            column: usr_id
+            generator:
+                strategy: IDENTITY
+        usrGivenname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: usr_givenname
+        usrFamilyname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: usr_familyname
+    manyToMany:
+        adr:
+            targetEntity: Address
+            cascade: {  }
+            mappedBy: null
+            inversedBy: usr
+            joinTable:
+                name: user_has_address
+                joinColumns:
+                    -
+                        name: usr_id
+                        referencedColumnName: usr_id
+                inverseJoinColumns:
+                    -
+                        name: adr_id
+                        referencedColumnName: adr_id
+            orderBy: null
+    lifecycleCallbacks: {  }

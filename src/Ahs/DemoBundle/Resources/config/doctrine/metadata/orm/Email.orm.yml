@@ -1,0 +1,29 @@
+Email:
+    type: entity
+    table: Email
+    fields:
+        emlId:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            column: eml_id
+            generator:
+                strategy: IDENTITY
+        emlAddress:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            column: eml_address
+    manyToOne:
+        usr:
+            targetEntity: User
+            cascade: {  }
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                usr_id:
+                    referencedColumnName: usr_id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

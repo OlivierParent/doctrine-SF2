@@ -1,0 +1,45 @@
+{% form_theme form 'AhsDemoBundle:Form:form_div_layout.html.twig' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% block title %}doctrine-SF2{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('bundles/ahsdemo/stylesheets/base.css'    ) }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/ahsdemo/stylesheets/skeleton.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/ahsdemo/stylesheets/layout.css'  ) }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/ahsdemo/stylesheets/main.css'    ) }}" />
+</head>
+
+<body>
+<div class="container">
+    <div class="sixteen columns">
+        <h1>Doctrine in Symfony2</h1>
+        <h2>A dynamic user registration form</h2>
+        <form novalidate="novalidate" id="form-doctrine" method="post">
+            <fieldset>
+                <legend>User Personal Details</legend>
+                {{ form_row(form.usrGivenname) }}
+                {{ form_row(form.usrFamilyname) }}
+            </fieldset>
+            <fieldset>
+                <legend>User Email Addresses</legend>
+                {% for email in form.emails %}
+                {{ form_widget(email) }}
+                {% endfor %}
+                <input type="submit" name="addEmail" value="+" />
+            </fieldset>
+            <fieldset>
+                <legend>User Addresses</legend>
+                {% for adr in form.adr %}
+                {{ form_widget(adr) }}
+                {% endfor %}
+                <input type="submit" name="addAddress" value="+" />
+            </fieldset>
+            {{form_rest(form)}}
+            <input type="submit" value="Save user" />
+        </form>
+    <div>
+</div>
+</body>
+</html>
