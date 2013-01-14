@@ -70,7 +70,7 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 
 3) Test
 -------
-Open [`http://localhost/web/`][7] or [`http://localhost/web/app_dev.php`][8] in your browser to test the installation.
+Open [`http://localhost/doctrine-SF2/web/`][7] or [`http://localhost/doctrine-SF2/web/app_dev.php`][8] in your browser to test the installation.
 
 [1]:  http://symfony.com/
 [2]:  http://www.doctrine-project.org/
@@ -78,6 +78,6 @@ Open [`http://localhost/web/`][7] or [`http://localhost/web/app_dev.php`][8] in 
 [4]:  http://www.apachefriends.org/
 [5]:  http://git-scm.com/
 [6]:  http://www.mysql.com/downloads/workbench/
-[7]:  http://localhost/web/
-[7]:  http://localhost/web/app_dev.php
+[7]:  http://localhost/doctrine-SF2/web/
+[8]:  http://localhost/doctrine-SF2/web/app_dev.php
 
