@@ -33,16 +33,21 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 1) Prerequisites
 ----------------
 1. A running server stack such as [MAMP][3] or [XAMPP][4].
+
 2. A working installation of [Git][5].
+
 3. A working directory where you will store your project folder. This could be the web root of your local server.
+
 4. A symbolic link to the PHP interpreter. In Mac OS X Terminal with MAMP already installed:
 
         $ cd /Applications/MAMP/htdocs/
         $ ln -s /Applications/MAMP/bin/php/php5.4.4/bin/php php
+
 5. Composer. In Mac OS X Terminal, provided step 4 has been correctly completed:
 
         $ cd /Applications/MAMP/htdocs/
         $ curl -s https://getcomposer.org/installer | ./php
+
 6. A working installation of [MySQL Workbench][6].
 
 2) Installation
@@ -80,4 +85,3 @@ Open [`http://localhost/doctrine-SF2/web/`][7] or [`http://localhost/doctrine-SF
 [6]:  http://www.mysql.com/downloads/workbench/
 [7]:  http://localhost/doctrine-SF2/web/
 [8]:  http://localhost/doctrine-SF2/web/app_dev.php
-
