@@ -65,11 +65,15 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 
 4. Update `app/config/parameters.yml` to match your database configuration.
 
-5. Install Symfony2 Standard Edition with composer
+5. Go to the project folder
+
+        $ cd doctrine-SF2
+
+6. Install Symfony2 Standard Edition with composer
 
         $ ../php ../composer.phar install
 
-6. Optionally, install the assets as a symbolic link
+7. Optionally, install the assets as a symbolic link
 
         $ ../php app/console assets:install --symlink
 
