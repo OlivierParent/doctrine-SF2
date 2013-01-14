@@ -56,9 +56,9 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 
         $ git clone https://github.com/OlivierParent/doctrine-SF2.git doctrine-SF2
 
-3. Forward engineer the database with MySQL Workbench from the EER diagram (doctrine-SF2/doctrine-SF2.mwb)
+3. Forward engineer the database with MySQL Workbench from the EER diagram (`doctrine-SF2/doctrine-SF2.mwb`)
 
-4. Update app/config/parameters.yml to match your database configuration.
+4. Update `app/config/parameters.yml` to match your database configuration.
 
 5. Install Symfony2 Standard Edition with composer
 
@@ -68,6 +68,9 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 
         $ ../php app/console assets:install --symlink
 
+3) Test
+-------
+Open [`http://localhost/web/`][7] or [`http://localhost/web/app_dev.php`][8] in your browser to test the installation.
 
 [1]:  http://symfony.com/
 [2]:  http://www.doctrine-project.org/
@@ -75,3 +78,6 @@ This is a minimalistic demonstration of how to use [Doctrine2][1] with [Symfony2
 [4]:  http://www.apachefriends.org/
 [5]:  http://git-scm.com/
 [6]:  http://www.mysql.com/downloads/workbench/
+[7]:  http://localhost/web/
+[7]:  http://localhost/web/app_dev.php
+
